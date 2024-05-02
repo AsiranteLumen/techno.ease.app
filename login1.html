@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,600;1,700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap"
+    />
+  </head>
+  <body>
+    <div
+      class="w-full relative bg-white h-[1024px] overflow-hidden cursor-pointer text-center text-77xl text-firebrick-100 font-oswald"
+      id="loginContainer1"
+    >
+      <div
+        class="absolute top-[0px] left-[0px] bg-whitesmoke-300 w-[815.1px] h-[1024px]"
+      >
+        <div
+          class="absolute top-[280.5px] left-[79.6px] w-[655.9px] h-[415.3px] overflow-hidden"
+        ></div>
+        <div
+          class="absolute top-[217px] left-[112.1px] w-[590.9px] h-[590px] overflow-hidden"
+        >
+          <img
+            class="absolute top-[0px] left-[15.9px] w-[575px] h-[590px] object-cover"
+            alt=""
+            src="/public/uelogo@2x.png"
+          />
+        </div>
+        <div
+          class="absolute top-[490.5px] left-[77.5px] w-[660.2px] h-[337.4px] overflow-hidden"
+        >
+          <div
+            class="absolute top-[0px] left-[14.2px] flex items-center w-[646px] h-[337.4px]"
+          >
+            <span class="w-full">
+              <p class="m-0">EASE</p>
+              <p class="m-0 text-41xl">
+                Enhanced Accessibility for Student Enrollment
+              </p>
+            </span>
+          </div>
+        </div>
+        <div
+          class="absolute top-[168.7px] left-[257.3px] w-[300.6px] h-[369.4px] overflow-hidden"
+        >
+          <img
+            class="absolute top-[0px] left-[14.2px] w-[286.4px] h-[369.4px] object-cover"
+            alt=""
+            src="/public/owl@2x.png"
+          />
+        </div>
+      </div>
+      <div
+        class="absolute top-[200px] left-[862px] rounded-xl bg-brown box-border w-[539px] h-[624px] text-21xl text-palegoldenrod-100 font-montserrat border-[1px] border-solid border-black"
+      >
+        <div
+          class="absolute top-[566px] left-[902.1px] text-7xl flex items-center justify-center w-[463px]"
+        >
+          [2nd SEMESTER, SY 2023-2024]
+        </div>
+        <div
+          class="absolute top-[428px] left-[0px] text-5xl flex items-center w-[539px] cursor-pointer"
+          id="wantToKnow"
+        >
+          <span class="w-full">
+            <p class="m-0">
+              <span class="font-montserrat">Want to know more about the</span>
+            </p>
+            <p class="m-0">
+              <span class="font-montserrat">University of the East?</span>
+              <i class="font-montserrat"> </i>
+              <i class="font-montserrat">
+                <span class="[text-decoration:underline]">Explore Now</span>
+              </i>
+            </p>
+          </span>
+        </div>
+        <div
+          class="absolute top-[303px] left-[55.3px] w-[427.3px] h-[92px] cursor-pointer"
+          id="enrollButtonContainer"
+        >
+          <img
+            class="absolute top-[0px] left-[0px] rounded-xl w-[427.3px] h-[92px]"
+            alt=""
+            src="/public/enroll-now-button.svg"
+          />
+
+          <div
+            class="absolute top-[22px] left-[81.7px] flex items-center justify-center w-[263.7px]"
+          >
+            Enroll Now!
+          </div>
+        </div>
+        <div
+          class="absolute top-[173px] left-[55.3px] w-[427.3px] h-[89px] text-firebrick-100"
+        >
+          <img
+            class="absolute top-[0px] left-[0px] rounded-xl w-[427.3px] h-[89px] cursor-pointer"
+            alt=""
+            src="/public/login-button.svg"
+            id="loginButton"
+          />
+
+          <div
+            class="absolute top-[20px] left-[147.7px] flex items-center justify-center w-[131.3px]"
+          >
+            Login
+          </div>
+        </div>
+        <b
+          class="absolute top-[46px] left-[0px] text-29xl tracking-[-0.02em] flex font-oswald items-center justify-center w-[539px] h-[47px]"
+          >Hello, Classmate!</b
+        >
+      </div>
+    </div>
+
+    <script>
+      var wantToKnow = document.getElementById("wantToKnow");
+      if (wantToKnow) {
+        wantToKnow.addEventListener("click", function () {
+          window.open("https://www.ue.edu.ph/cal/");
+        });
+      }
+      
+      var enrollButtonContainer = document.getElementById("enrollButtonContainer");
+      if (enrollButtonContainer) {
+        enrollButtonContainer.addEventListener("click", function (e) {
+          window.location.href = "./application.html";
+        });
+      }
+      
+      var loginButton = document.getElementById("loginButton");
+      if (loginButton) {
+        loginButton.addEventListener("click", function (e) {
+          window.location.href = "./student-login.html";
+        });
+      }
+      
+      var loginContainer1 = document.getElementById("loginContainer1");
+      if (loginContainer1) {
+        loginContainer1.addEventListener("click", function (e) {
+          window.location.href = "./student-login.html";
+        });
+      }
+      </script>
+  </body>
+</html>
